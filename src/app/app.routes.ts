@@ -6,6 +6,7 @@ import {FundTheProjectComponent} from './fund-the-project/fund-the-project.compo
 import {CatchButtonComponent} from './catch-button/catch-button.component';
 import {OtpDialsComponent} from './otp-dials/otp-dials.component';
 import {SquigglyTextComponent} from './squiggly-text/squiggly-text.component';
+import {ContactNumberComponent} from './contact-number/contact-number.component';
 
 export const routes: Routes = [
   {
@@ -42,5 +43,10 @@ export const routes: Routes = [
     path: 'squiggly-text',
     component: SquigglyTextComponent,
     title: 'Squiggly Text'
+  },
+  {
+    path: 'contact-number',
+    component: ContactNumberComponent,
+    title: 'Contact Number'
   }
 ];
