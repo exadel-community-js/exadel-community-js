@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="exadel-text-squiggly">
+  <style>
+  #exadel-text-squiggly {
+    display: none;
+  }
+  .with-joke :is(h2, label, button, p) {
+    animation: exadel-text-squiggly-animation 0.34s linear infinite;
+  }
+  @keyframes exadel-text-squiggly-animation {
+    0% {filter: url('#exadel-text-squiggly-0');}
+    25% {filter: url('#exadel-text-squiggly-1');}
+    50% {filter: url('#exadel-text-squiggly-2');}
+    75% {filter: url('#exadel-text-squiggly-3');}
+    100% {filter: url('#exadel-text-squiggly-4');}
+  }
+  </style>
+  <defs>
+    <filter id="exadel-text-squiggly-0">
+      <feTurbulence id="exadel-text-squiggly-turbulence-0" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+    </filter>
+    <filter id="exadel-text-squiggly-1">
+      <feTurbulence id="exadel-text-squiggly-turbulence-1" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+    </filter>
+    <filter id="exadel-text-squiggly-2">
+      <feTurbulence id="exadel-text-squiggly-turbulence-2" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+    </filter>
+    <filter id="exadel-text-squiggly-3">
+      <feTurbulence id="exadel-text-squiggly-turbulence-3" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+    </filter>
+    <filter id="exadel-text-squiggly-4">
+      <feTurbulence id="exadel-text-squiggly-turbulence-4" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+    </filter>
+  </defs>
+</svg>
+<div class="form-container with-joke">
+  <h2>Contact Form</h2>
+  <form>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" required>
+
+    <p>
+      By using our services, you agree to these Terms of Service and accept responsibility for compliance with applicable laws. You must provide accurate information and keep your account details confidential. We reserve all rights to our content, and you may not reuse or distribute any part without explicit permission. Our company is not liable for indirect or consequential damages resulting from your use of our services. We reserve the right to terminate or...
+    </p>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
