@@ -16,6 +16,11 @@ ul {
   display: flex;
   list-style: none;
   gap: 1rem;
+  min-width: 0;
+}
+
+li {
+  overflow: hidden;
 }
 
 a {
@@ -28,6 +33,10 @@ a {
   border: 1px solid blue;
   background-color: #efefef;
   transition: background-color 0.2s ease;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
 }
 
 a.active {
@@ -49,5 +58,7 @@ h1 {
   margin: 0;
   background: linear-gradient(90deg, #ff6ec4, #7873f5);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
 h2 { margin: 0.75rem; }
